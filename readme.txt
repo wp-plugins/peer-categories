@@ -3,11 +3,12 @@ Contributors: coffee2code
 Donate link: http://coffee2code.com/donate
 Tags: categories, category, peer, sibling, related posts, similar posts, list, the_category, coffee2code
 Requires at least: 2.5
-Tested up to: 3.0.1
-Stable tag: 1.1
-Version: 1.1
+Tested up to: 3.1
+Stable tag: 1.1.1
+Version: 1.1.1
 
 List the categories that are peer (i.e. share the same category parent) to all lowest-level assigned categories for the specified post.
+
 
 == Description ==
 
@@ -35,11 +36,11 @@ Vegetables
 
 If you directly assigned the categories "Fruiting" and "Pumpkin" to a post, `peer_categories()` would return a list that consists of: "Bell Pepper", "Cucumber", and "Pumpkin".  Notice that since "Fruiting" was a parent to a directly assigned category, it and its peers are not included in the list.  If only "Fruiting" were selected as a category, then "Leafy", "Fruiting", and "Podded" would have been listed.
 
-By default, categories are listed as an HTML list.  The first argment to the template tag allows you to define a custom separator, e.g. to have a simple comma-separated list of peer categories: `<?php peer_categories(','); ?>`.
+By default, categories are listed as an HTML list.  The first argument to the template tag allows you to define a custom separator, e.g. to have a simple comma-separated list of peer categories: `<?php peer_categories(','); ?>`.
 
 As with categories listed via `the_category()`, categories that are listed are presented as links to the respective category's archive page.
 
-Example usage (based on preceeding example):
+Example usage (based on preceding example):
 
 * `<?php peer_categories(); ?>`
 
@@ -54,6 +55,8 @@ Outputs something like:
 Outputs something like:
 
 `<a href="http://yourblog.com/category/fruiting/bell-pepper">Bell Pepper</a>, <a href="http://yourblog.com/category/fruiting/cucumber">Cucumber</a>, <a href="http://yourblog.com/category/fruiting/pumpkin">Pumpkin</a>`
+
+Links: [Plugin Homepage]:(http://coffee2code.com/wp-plugins/peer-categories/) | [Author Homepage]:(http://coffee2code.com)
 
 
 == Installation ==
@@ -101,6 +104,10 @@ Optional argument. (int) Post ID.  If 'false', then the current post is assumed.
 
 == Changelog ==
 
+= 1.1.1 =
+* Note compatibility with WP 3.1+
+* Update copyright date (2011)
+
 = 1.1 =
 * Wrap all functions in if (!function_exists()) check
 * Remove docs from top of plugin file (all that and more are in readme.txt)
@@ -117,6 +124,9 @@ Optional argument. (int) Post ID.  If 'false', then the current post is assumed.
 
 
 == Upgrade Notice ==
+
+= 1.1.1 =
+Trivial update: noted compatibility with WP 3.1+ and updated copyright date.
 
 = 1.1 =
 Minor update. Highlights: miscellaneous non-functionality tweaks; verified WP 3.0 compatibility.

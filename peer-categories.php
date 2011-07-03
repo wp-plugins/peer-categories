@@ -2,21 +2,26 @@
 /**
  * @package Peer_Categories
  * @author Scott Reilly
- * @version 1.1.1
+ * @version 1.1.2
  */
 /*
 Plugin Name: Peer Categories
-Version: 1.1.1
+Version: 1.1.2
 Plugin URI: http://coffee2code.com/wp-plugins/peer-categories/
 Author: Scott Reilly
 Author URI: http://coffee2code.com
 Description: List the categories that are peer (i.e. share the same category parent) to all lowest-level assigned categories for the specified post.
 
-Compatible with WordPress 2.5+, 2.6+, 2.7+, 2.8+, 2.9+, 3.0+, 3.1+.
+Compatible with WordPress 2.5+, 2.6+, 2.7+, 2.8+, 2.9+, 3.0+, 3.1+, 3.2+.
 
 =>> Read the accompanying readme.txt file for instructions and documentation.
 =>> Also, visit the plugin's homepage for additional information and updates.
 =>> Or visit: http://wordpress.org/extend/plugins/peer-categories/
+
+TODO:
+	* Prefix function wit 'c2c_' and deprecate existing versions
+	* Support filter invocation approach via add_filter( 'peer_categories', 'peer_categories', 10, 2 );
+	* Document previously mentioned filters
 
 */
 
@@ -36,7 +41,7 @@ LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRA
 IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 */
 
-if ( !function_exists( 'peer_categories' ) ) :
+if ( ! function_exists( 'peer_categories' ) ) :
 /**
  * Outputs the peer categories.
  *
@@ -52,7 +57,7 @@ function peer_categories( $separator = '', $post_id = false ) {
 endif;
 
 
-if ( !function_exists( 'get_peer_categories_list' ) ) :
+if ( ! function_exists( 'get_peer_categories_list' ) ) :
 /**
  * Gets the list of peer categories.
  *
@@ -91,7 +96,7 @@ function get_peer_categories_list( $separator = '', $post_id = false ) {
 endif;
 
 
-if ( !function_exists( 'get_peer_categories' ) ) :
+if ( ! function_exists( 'get_peer_categories' ) ) :
 /**
  * Returns the list of peer categories for the specified post. IF not supplied a
  * post ID, then the top-level categories will be returned.

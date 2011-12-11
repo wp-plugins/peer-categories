@@ -2,17 +2,17 @@
 /**
  * @package Peer_Categories
  * @author Scott Reilly
- * @version 1.1.2
+ * @version 1.1.3
  */
 /*
 Plugin Name: Peer Categories
-Version: 1.1.2
+Version: 1.1.3
 Plugin URI: http://coffee2code.com/wp-plugins/peer-categories/
 Author: Scott Reilly
 Author URI: http://coffee2code.com
 Description: List the categories that are peer (i.e. share the same category parent) to all lowest-level assigned categories for the specified post.
 
-Compatible with WordPress 2.5+, 2.6+, 2.7+, 2.8+, 2.9+, 3.0+, 3.1+, 3.2+.
+Compatible with WordPress 2.5+, 2.6+, 2.7+, 2.8+, 2.9+, 3.0+, 3.1+, 3.2+, 3.3+.
 
 =>> Read the accompanying readme.txt file for instructions and documentation.
 =>> Also, visit the plugin's homepage for additional information and updates.
@@ -26,7 +26,7 @@ TODO:
 */
 
 /*
-Copyright (c) 2008-2011 by Scott Reilly (aka coffee2code)
+Copyright (c) 2008-2012 by Scott Reilly (aka coffee2code)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation
 files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy,
@@ -112,7 +112,7 @@ function get_peer_categories( $id = false ) {
 	$peers = array();
 	$parents = array();
 
-	// Go through all categories and get, then filter out, parents.
+	// Go through all categories and get, then filter out parents.
 	foreach ( $categories as $c )
 		$parents[] = $c->parent;
 	foreach ( $categories as $c ) {

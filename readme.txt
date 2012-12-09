@@ -5,9 +5,9 @@ Tags: categories, category, peer, sibling, related posts, similar posts, list, t
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Requires at least: 2.5
-Tested up to: 3.4
-Stable tag: 1.1.4
-Version: 1.1.4
+Tested up to: 3.5
+Stable tag: 1.1.5
+Version: 1.1.5
 
 List the categories that are peer (i.e. share the same category parent) to all lowest-level assigned categories for the specified post.
 
@@ -106,6 +106,10 @@ Optional argument. (int) Post ID.  If 'false', then the current post is assumed.
 
 == Changelog ==
 
+= 1.1.5 =
+* Note compatibility through WP 3.5+
+* Update copyright date (2013)
+
 = 1.1.4 =
 * Re-license as GPLv2 or later (from X11)
 * Add 'License' and 'License URI' header tags to readme.txt and plugin file
@@ -142,6 +146,9 @@ Optional argument. (int) Post ID.  If 'false', then the current post is assumed.
 
 
 == Upgrade Notice ==
+
+= 1.1.5 =
+Trivial update: noted compatibility through WP 3.5+
 
 = 1.1.4 =
 Trivial update: noted compatibility through WP 3.4+; explicitly stated license

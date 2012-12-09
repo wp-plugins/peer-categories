@@ -2,11 +2,11 @@
 /**
  * @package Peer_Categories
  * @author Scott Reilly
- * @version 1.1.4
+ * @version 1.1.5
  */
 /*
 Plugin Name: Peer Categories
-Version: 1.1.4
+Version: 1.1.5
 Plugin URI: http://coffee2code.com/wp-plugins/peer-categories/
 Author: Scott Reilly
 Author URI: http://coffee2code.com/
@@ -14,7 +14,7 @@ License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Description: List the categories that are peer (i.e. share the same category parent) to all lowest-level assigned categories for the specified post.
 
-Compatible with WordPress 2.5 through 3.4+.
+Compatible with WordPress 2.5 through 3.5+.
 
 =>> Read the accompanying readme.txt file for instructions and documentation.
 =>> Also, visit the plugin's homepage for additional information and updates.
@@ -28,7 +28,7 @@ TODO:
 */
 
 /*
-	Copyright (c) 2008-2012 by Scott Reilly (aka coffee2code)
+	Copyright (c) 2008-2013 by Scott Reilly (aka coffee2code)
 
 	This program is free software; you can redistribute it and/or
 	modify it under the terms of the GNU General Public License

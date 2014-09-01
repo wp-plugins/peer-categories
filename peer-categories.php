@@ -1,31 +1,29 @@
 <?php
 /**
+ * Plugin Name: Peer Categories
+ * Version:     2.0.1
+ * Plugin URI:  http://coffee2code.com/wp-plugins/peer-categories/
+ * Author:      Scott Reilly
+ * Author URI:  http://coffee2code.com/
+ * License:     GPLv2 or later
+ * License URI: http://www.gnu.org/licenses/gpl-2.0.html
+ * Description: List the categories that are peer (i.e. share the same category parent) to all lowest-level assigned categories for the specified post.
+ *
+ * Compatible with WordPress 3.6 through 4.0+.
+ *
+ * =>> Read the accompanying readme.txt file for instructions and documentation.
+ * =>> Also, visit the plugin's homepage for additional information and updates.
+ * =>> Or visit: https://wordpress.org/plugins/peer-categories/
+ *
+ * TODO:
+ * * Prefix function wit 'c2c_' and deprecate existing versions
+ * * Support filter invocation approach via add_filter( 'peer_categories', 'peer_categories', 10, 2 );
+ * * Document previously mentioned filters
+ *
  * @package Peer_Categories
  * @author Scott Reilly
- * @version 2.0
+ * @version 2.0.1
  */
-/*
-Plugin Name: Peer Categories
-Version: 2.0
-Plugin URI: http://coffee2code.com/wp-plugins/peer-categories/
-Author: Scott Reilly
-Author URI: http://coffee2code.com/
-License: GPLv2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Description: List the categories that are peer (i.e. share the same category parent) to all lowest-level assigned categories for the specified post.
-
-Compatible with WordPress 3.6 through 3.8+.
-
-=>> Read the accompanying readme.txt file for instructions and documentation.
-=>> Also, visit the plugin's homepage for additional information and updates.
-=>> Or visit: http://wordpress.org/plugins/peer-categories/
-
-TODO:
-	* Prefix function wit 'c2c_' and deprecate existing versions
-	* Support filter invocation approach via add_filter( 'peer_categories', 'peer_categories', 10, 2 );
-	* Document previously mentioned filters
-
-*/
 
 /*
 	Copyright (c) 2008-2014 by Scott Reilly (aka coffee2code)
@@ -44,6 +42,8 @@ TODO:
 	along with this program; if not, write to the Free Software
 	Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 */
+
+defined( 'ABSPATH' ) or die();
 
 if ( ! function_exists( 'c2c_peer_categories' ) ) :
 
